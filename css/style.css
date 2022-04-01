@@ -1,0 +1,153 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Roboto ,sans-serif;
+
+}
+
+:root {
+    --background-d: #e6e4e449;
+    --link: #0066ff;
+}
+
+a {
+    text-decoration: none;
+    color: var(--link);
+}
+
+body {
+    background-color: var(--background-d);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+/* Icon github */
+header i#github-icon svg {
+    width: 55px;
+    margin-bottom: 20px;
+}
+
+header p {
+
+    font-size: 3em;
+    font-weight: 300;
+    font-size: 1.9em;
+}
+
+/* Main */
+main {
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main form {
+    width: 45%;
+    max-width: 400px;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    height: 40vh;
+    min-height: 230px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+main form input {
+    width: 100%;
+    height: 30px;
+    border-radius: 6px;
+    border: 1px solid lightgray;
+    margin: 6px 0px 15px 0px;
+}
+
+main form .username-container span, .password-container span {
+    font-weight: 500;
+    font-size: 0.9em;
+}
+
+main form .password-container aside {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+main form .password-container aside a {
+    font-weight: 500;
+    font-size: 0.9em;
+}
+
+main form button#button-login {
+    min-height: 40px;
+    margin: 10px 0px;
+    border-radius: 7px;
+    border: 0;
+    background-color: #0a9727;
+    color: white;
+    font-weight: 500;
+}
+
+main .create-new-account {
+   font-weight: 400;
+   font-size: 0.9em;
+   border: 1px solid lightgray;
+   width: 45%;
+   max-width: 400px;
+   border-radius: 7px;
+   padding: 10px;
+   height: 45px;
+   margin-top: 17px;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+footer {
+    margin-top: 80px;
+}
+
+footer ul {
+    display: flex;
+    list-style-type: none;
+}
+
+footer ul li {
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 390px) {
+
+    main form {
+        min-width: 300px;
+    }
+
+    main .create-new-account {
+        min-width: 100%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    
+    main form {
+        min-width: 60%;
+    }
+
+    main .create-new-account {
+        min-width: 60%;
+    }
+}
